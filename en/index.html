@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ambos Money — Money app for couples. No bank login, no subscription.</title>
+<meta name="description" content="A shared money tracker for couples on iPhone. Each of you uses your own iPhone and Apple ID. No bank login, no ads, no subscription: free to start, Premium is a one-time purchase.">
+<link rel="canonical" href="https://paulodermato.github.io/ambos-money-site/en/">
+<link rel="alternate" hreflang="en" href="https://paulodermato.github.io/ambos-money-site/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://paulodermato.github.io/ambos-money-site/">
+<meta property="og:url" content="https://paulodermato.github.io/ambos-money-site/en/">
+<meta name="apple-itunes-app" content="app-id=6821386581">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ambos Money — Shared finances for couples">
+<meta property="og:description" content="One shared view of your money on two iPhones. No bank login. No subscription.">
+<meta property="og:image" content="https://paulodermato.github.io/ambos-money-site/en/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Ambos Money","operatingSystem":"iOS 17+","applicationCategory":"FinanceApplication",
+ "description":"A shared money tracker for couples on iPhone. No bank login, no ads, no subscription.",
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free to start. Ambos Premium is a one-time in-app purchase."},
+ "url":"https://apps.apple.com/us/app/id6821386581"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Does Ambos Money connect to my bank?","acceptedAnswer":{"@type":"Answer","text":"No. You add transactions yourselves in a few taps. That means there is no bank connection to break and no credentials to share."}},
+ {"@type":"Question","name":"Is it a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. The app is free to start (30 transactions a month, 2 accounts and 1 goal, with sharing and CSV export included). Ambos Premium is a one-time purchase that unlocks both iPhones."}},
+ {"@type":"Question","name":"Does it work on Android?","acceptedAnswer":{"@type":"Answer","text":"Not today. Ambos Money is iPhone only (iOS 17 or later), and sharing needs iCloud on both iPhones."}},
+ {"@type":"Question","name":"Does it split bills or tell us who owes whom?","acceptedAnswer":{"@type":"Answer","text":"No. It shows who paid what, but it does not calculate settlements."}}
+]}
+</script>
+<style>
+:root{--terra:#b04e2e;--cocoa:#2b1f1a;--cream:#faf4ec;--sand:#f1e6d8;--amber:#f0bc60;--muted:#76625a}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.55 ui-rounded,"SF Pro Rounded",-apple-system,system-ui,"Segoe UI",sans-serif;color:var(--cocoa);background:var(--cream)}
+a{color:var(--terra)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.hero{background:var(--terra);color:#fff7f0;padding:64px 0 0;overflow:hidden}
+header.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.08;margin:0 0 14px;letter-spacing:-.02em}
+header.hero h1 em{font-style:normal;color:var(--amber)}
+header.hero p.lead{font-size:clamp(18px,2.4vw,22px);max-width:34em;margin:0 0 26px;color:#ffe2cd}
+.cta{display:inline-block;background:var(--cream);color:var(--terra);font-weight:700;padding:14px 26px;border-radius:999px;text-decoration:none}
+.cta:focus-visible,a:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.note{font-size:14px;color:#ffd9c0;margin-top:12px}
+.shots{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:36px 22px 0;margin:0 -22px;-webkit-overflow-scrolling:touch}
+.shots img{width:230px;height:auto;border-radius:26px 26px 0 0;scroll-snap-align:start;flex:0 0 auto;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+section{padding:56px 0}
+h2{font-size:clamp(26px,4vw,38px);line-height:1.15;margin:0 0 18px;letter-spacing:-.01em}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border-radius:22px;padding:22px;box-shadow:0 1px 0 rgba(43,31,26,.06)}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{margin:0;color:var(--muted)}
+.band{background:var(--sand)}
+table{border-collapse:collapse;width:100%;max-width:640px;background:#fff;border-radius:18px;overflow:hidden}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid #eadfd2;vertical-align:top}
+th{background:var(--cocoa);color:#fff7f0}
+details{background:#fff;border-radius:18px;padding:16px 20px;margin:0 0 12px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:var(--muted)}
+footer{padding:36px 0 56px;color:var(--muted);font-size:14px}
+.honest li{margin:6px 0}
+@media (prefers-color-scheme:dark){:root{--cream:#1b1512;--sand:#241b17;--cocoa:#f4ebe2;--muted:#b7a396}.card,table,details{background:#2a201b}th{background:#f4ebe2;color:#1b1512}td,th{border-color:#3a2d26}.cta{background:#fff7f0}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p style="margin:0 0 18px;font-weight:700;letter-spacing:.04em">AMBOS MONEY · FOR iPHONE</p>
+    <h1>Money for couples.<br><em>No bank login.</em></h1>
+    <p class="lead">One shared view of your money, each of you on your own iPhone. Nothing to connect, nothing to break, no subscription.</p>
+    <a class="cta" href="https://apps.apple.com/app/apple-store/id6821386581?pt=128971587&amp;ct=landing&amp;mt=8">Get Ambos Money on the App Store</a>
+    <p class="note">Free to start · iPhone only (iOS 17+) · Premium is a one-time purchase</p>
+    <div class="shots" aria-label="App screenshots">
+      <img src="img/01-no-bank-login.jpg" alt="Home screen showing the month balance, what came in and what you spent" width="603" height="1311">
+      <img src="img/02-who-paid.jpg" alt="New transaction screen with Who paid: you, your partner or both" width="603" height="1311" loading="lazy">
+      <img src="img/03-pay-once.jpg" alt="Premium screen: pay once, no subscription, free plan explained" width="603" height="1311" loading="lazy">
+      <img src="img/04-two-iphones.jpg" alt="Two iPhones showing the same shared money view" width="603" height="1311" loading="lazy">
+      <img src="img/05-where-it-went.jpg" alt="Spending by category for the month" width="603" height="1311" loading="lazy">
+      <img src="img/06-goals.jpg" alt="Shared goals with progress" width="603" height="1311" loading="lazy">
+      <img src="img/07-cards.jpg" alt="Credit card with installments and statement" width="603" height="1311" loading="lazy">
+      <img src="img/08-privacy.jpg" alt="Privacy: no ads, no tracking, no bank login" width="603" height="1311" loading="lazy">
+    </div>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>Shared finances for couples, made simple</h2>
+    <div class="grid">
+      <div class="card"><h3>Who paid? You, them or both</h3><p>Every transaction says who it belongs to. Accounts have owners too: yours, theirs or joint.</p></div>
+      <div class="card"><h3>Two iPhones, one shared view</h3><p>You each use your own Apple ID. What one of you adds shows up on the other’s iPhone through iCloud. No shared password.</p></div>
+      <div class="card"><h3>No bank login</h3><p>You add transactions yourselves in a few taps, so there is no connection to fail and no credentials to hand over.</p></div>
+      <div class="card"><h3>Where the money went</h3><p>Income, spending and your month balance at a glance, by category and day by day.</p></div>
+      <div class="card"><h3>Goals you build together</h3><p>A trip, a down payment, an emergency fund. Follow progress milestone by milestone.</p></div>
+      <div class="card"><h3>Cards and installments</h3><p>Purchases, statements and credit left. We never ask for your full card number.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="pricing">
+  <div class="wrap">
+    <h2>Pay once. No subscription.</h2>
+    <p>The app is free to start. If you outgrow the free plan, Ambos Premium is a single purchase that covers both of your iPhones, even with different Apple IDs. No renewals. Price is shown by the App Store in your country (US$5.99 in the U.S. at the time of writing).</p>
+    <table>
+      <tr><th></th><th>Free</th><th>Premium (once)</th></tr>
+      <tr><td>Transactions</td><td>30 a month</td><td>Unlimited</td></tr>
+      <tr><td>Accounts</td><td>2</td><td>Unlimited</td></tr>
+      <tr><td>Goals</td><td>1</td><td>Unlimited</td></tr>
+      <tr><td>Sharing with your partner</td><td>Included</td><td>Included</td></tr>
+      <tr><td>CSV export</td><td>Included</td><td>Included</td></tr>
+      <tr><td>Your existing data</td><td colspan="2">Always stays, viewable and editable</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Your data stays yours</h2>
+    <p>No ads, no tracking, no analytics. Your financial data lives on your iPhones and, when you share, in iCloud, visible only to the person you invite. It never goes through Ambos Money servers. Only the Premium purchase confirmation goes to a small license service, with no amounts, names or email.</p>
+    <p><a href="privacy.html">Read the privacy policy</a></p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Good to know</h2>
+    <ul class="honest">
+      <li><strong>iPhone only</strong> (iOS 17 or later). Sharing needs iCloud turned on for both of you.</li>
+      <li><strong>Manual entry.</strong> No bank import, by design.</li>
+      <li><strong>It doesn’t split bills</strong> or calculate who owes whom. It shows who paid what.</li>
+      <li>One currency per Ambos: US dollar, euro, British pound, Brazilian real or Mexican peso. Amounts are never converted.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <details><summary>Does Ambos Money connect to my bank?</summary><p>No. You add transactions yourselves in a few taps. That means there is no bank connection to break and no credentials to share.</p></details>
+    <details><summary>Is it a subscription?</summary><p>No. The app is free to start (30 transactions a month, 2 accounts and 1 goal, with sharing and CSV export included). Ambos Premium is a one-time purchase that unlocks both iPhones.</p></details>
+    <details><summary>Does it work on Android?</summary><p>Not today. Ambos Money is iPhone only, and sharing needs iCloud on both iPhones.</p></details>
+    <details><summary>Does it split bills or tell us who owes whom?</summary><p>No. It shows who paid what, but it does not calculate settlements.</p></details>
+    <details><summary>What happens if we don’t buy Premium?</summary><p>You keep using the free plan. Everything you recorded stays, and you can still view, edit, sync and export. New items follow the free limits.</p></details>
+    <details><summary>Can we take our data with us?</summary><p>Yes. Export accounts, income and expenses as CSV to open in Numbers or Excel, any time and for free.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a class="cta" style="background:var(--terra);color:#fff7f0" href="https://apps.apple.com/app/apple-store/id6821386581?pt=128971587&amp;ct=landing&amp;mt=8">Get Ambos Money on the App Store</a></p>
+    <p>Ambos Money · by Paulo de Telles e Batista · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="../" lang="pt-BR" hreflang="pt-BR">Português</a><br>iPhone and iCloud are trademarks of Apple Inc. App Store is a service mark of Apple Inc. Not affiliated with or endorsed by Apple.</p>
+  </div>
+</footer>
+</body>
+</html>
