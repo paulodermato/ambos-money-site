@@ -10,11 +10,11 @@
 <body>
 <header>
 <a class="logo" href="./"><svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="27" rx="15" ry="8.5" fill="#B04E2E"/><ellipse cx="19" cy="14" rx="9" ry="6.5" fill="#E3A03A"/></svg> Ambos Money</a>
-<nav><a href="./">Início</a><a href="support.html">Suporte</a><a href="privacy.html" aria-current="page">Privacidade</a></nav>
+<nav><a href="./">Início</a><a href="support.html">Suporte</a><a href="privacy.html" aria-current="page">Privacidade</a><a href="en/privacy.html" lang="en" hreflang="en">English</a></nav>
 </header>
 <main>
 <h1>Política de Privacidade</h1>
-<p class="muted">Última atualização: 13 de outubro de 2026<br>Responsável: Paulo de Telles e Batista · Contato: <a href="mailto:paulotell27@yahoo.com.br">paulotell27@yahoo.com.br</a></p>
+<p class="muted">Última atualização: 25 de novembro de 2026<br>Responsável: Paulo de Telles e Batista · Contato: <a href="mailto:paulotell27@yahoo.com.br">paulotell27@yahoo.com.br</a></p>
 <p class="lead">O Ambos Money é um app para o casal organizar o dinheiro junto. Esta política explica o que o app guarda, onde guarda e o que ele não faz.</p>
 
 <h2>1. O que o app armazena</h2>
@@ -23,8 +23,11 @@
 <li>nomes das duas pessoas do casal e o nome do espaço compartilhado;</li>
 <li>contas (nome, tipo, titularidade, saldo inicial);</li>
 <li>lançamentos (valor, descrição, categoria, responsável, conta, data);</li>
-<li>objetivos (nome, valor-alvo, valor acumulado, data-alvo opcional).</li>
+<li>objetivos (nome, valor-alvo, valor acumulado, data-alvo opcional);</li>
+<li>cartões de crédito, se vocês usarem: nome do cartão, emissor, bandeira, quatro últimos dígitos (opcional), titular, limite, dias de fechamento e vencimento, compras (valor, parcelas, data, descrição, estabelecimento, categoria, responsável) e ajustes de fatura. O app não pede o número completo do cartão, a validade nem o código de segurança;</li>
+<li>a moeda escolhida para o espaço.</li>
 </ul>
+<p>No próprio iPhone o app também guarda preferências, como o idioma escolhido e quando pediu avaliação ou mostrou a tela do Premium pela última vez. Essas preferências não são enviadas ao desenvolvedor.</p>
 <p>Quando vocês compartilham, o app também guarda qual pessoa do casal corresponde a cada conta do iCloud, usando o identificador que o iCloud fornece ao app para cada usuário. Esse identificador não contém nome, e-mail nem telefone.</p>
 
 <h2>2. Onde os dados ficam</h2>
@@ -49,13 +52,21 @@
 <p>Para liberar o Premium para as duas pessoas do casal, mesmo com Apple IDs diferentes, o app usa um serviço de licenças operado pelo desenvolvedor e hospedado na Cloudflare:</p>
 <ul>
 <li><strong>O que é enviado:</strong> a confirmação de compra assinada pela Apple e um identificador aleatório do espaço compartilhado (gerado pelo app, sem relação com nomes ou contas). Na renovação, uma vez por dia, o app envia apenas a licença atual.</li>
-<li><strong>O que o serviço guarda:</strong> um resumo criptográfico (hash) do número da compra, o produto, o ambiente (produção ou teste), o estado (ativa ou revogada), datas, número de transferências e o identificador aleatório do espaço. Guardamos também os avisos de reembolso enviados pela Apple (identificador do aviso, tipo e data) por 90 dias.</li>
+<li><strong>O que o serviço guarda:</strong> um resumo criptográfico (hash) do número da compra, o produto, o ambiente (produção ou teste), o estado (ativa ou revogada), datas, número de transferências, o identificador técnico da licença e o identificador aleatório do espaço. Guardamos também os avisos de reembolso enviados pela Apple (identificador do aviso, tipo e data) por 90 dias.</li>
 <li><strong>O que o serviço nunca recebe:</strong> saldos, lançamentos, contas, objetivos, valores, nomes, e-mail, Apple ID ou credenciais do iCloud.</li>
 <li><strong>Onde fica a licença:</strong> a licença assinada é guardada no iPhone (Keychain) e no iCloud do espaço compartilhado, junto com os dados de vocês, para que a outra pessoa também tenha o Premium.</li>
 <li><strong>Reembolso:</strong> se a Apple reembolsar a compra, o serviço marca a licença como revogada. Os dados financeiros não são tocados: tudo continua acessível, editável e exportável; só voltam a valer os limites do plano gratuito para novas criações.</li>
 <li><strong>Finalidade e base legal:</strong> esses dados são usados apenas para validar, renovar e revogar a licença comprada (execução de contrato, art. 7º, V, da LGPD). Não são usados para publicidade, análise ou rastreamento.</li>
 <li><strong>Operadora e transferência internacional:</strong> a Cloudflare atua como operadora e pode processar as requisições fora do Brasil. O serviço não guarda registros de acesso (endereço IP) além do processamento de cada requisição pela Cloudflare.</li>
-<li><strong>Retenção:</strong> a vinculação compra ↔ espaço é mantida enquanto o Premium existir (inclusive compras revogadas, para impedir reativação indevida); licenças substituídas por transferência, por 28 dias; avisos de reembolso, por 90 dias.</li>
+<li><strong>Retenção:</strong> a vinculação compra ↔ espaço é mantida enquanto o Premium existir (inclusive compras revogadas, para impedir reativação indevida); licenças substituídas por transferência, por 28 dias; avisos de reembolso, por 90 dias; se um reembolso chegar antes de a compra ser vinculada a um espaço, o resumo criptográfico da compra e a data são mantidos para impedir a ativação.</li>
+</ul>
+
+<h3>2.6 Informações que chegam pela Apple, pelo suporte e por este site</h3>
+<ul>
+<li>A Apple fornece ao desenvolvedor relatórios de vendas e estatísticas da App Store e, quando a pessoa ativou nos Ajustes do iOS o compartilhamento de análises com desenvolvedores, relatórios de falhas e de uso. Isso segue a política de privacidade da Apple.</li>
+<li>O pedido de avaliação é a janela da própria Apple: a nota e o texto vão para a App Store.</li>
+<li>Se você escrever para o suporte, recebemos seu e-mail e o conteúdo da mensagem, usados para responder.</li>
+<li>Este site não usa cookies nem ferramentas de análise. Ele é hospedado no GitHub Pages, que registra o endereço IP das visitas por segurança, conforme a política do GitHub.</li>
 </ul>
 
 <h2>3. O que o app não faz</h2>
@@ -70,7 +81,7 @@
 
 <h2>4. Exclusão</h2>
 <ul>
-<li>Lançamentos, contas e objetivos podem ser excluídos um a um. Com o compartilhamento ativo, a exclusão vale nos dois iPhones. Excluir uma conta exclui também os lançamentos dela.</li>
+<li>Lançamentos, contas, objetivos e cartões podem ser excluídos um a um. Com o compartilhamento ativo, a exclusão vale nos dois iPhones. Excluir uma conta exclui também os lançamentos dela; excluir um cartão remove as compras e os ajustes dele (os pagamentos de fatura continuam nas contas).</li>
 <li>Parar de compartilhar ou remover a outra pessoa (seção 2.3) não apaga dados de nenhum iPhone.</li>
 <li><strong>Dados no iPhone:</strong> excluir o app apaga os dados guardados naquele iPhone (backups do iPhone feitos pelo sistema podem conter uma cópia).</li>
 <li><strong>Dados no iCloud:</strong> o app não tem, nesta versão, uma opção para apagar de uma vez o espaço compartilhado nem os dados guardados no iCloud. Para pedir ajuda com a remoção, escreva para <a href="mailto:paulotell27@yahoo.com.br">paulotell27@yahoo.com.br</a>. Como o desenvolvedor não tem acesso ao iCloud de vocês, a remoção é feita no próprio iPhone ou pelos ajustes do iCloud da Apple.</li>
